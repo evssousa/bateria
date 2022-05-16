@@ -1,0 +1,84 @@
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #333;
+    --text: #fff;
+    --active: #ff0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
+h1 {
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--text);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.key.active {
+    border: 2px solid var(--active);
+    color: var(--active);
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+
+.composer input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+
+.composer button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bg);
+    color: var(--text);
+    border: 2px solid var(--text);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+footer {
+    margin-top: 20px;
+    color: var(--text);
+    font-size: 13px;
+}
